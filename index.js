@@ -107,6 +107,18 @@ function createBot() {
 
   bot = newBot;
 
+  bot._client.on('disconnect', (packet) => {
+    console.log('Disconnect packet:', JSON.stringify(packet));
+  });
+
+  bot._client.on('error', (err) => {
+    console.error('Protocol error:', err.message);
+  });
+
+  bot._client.on('end', () => {
+    console.log('Network connection ended.');
+  });
+  
   bot.once('login', () => {
     console.log(`Bot "${bot.username}" logged in to ${serverHost}.`);
     io.emit('bot_status', `Bot ${bot.username} logged in.`);
