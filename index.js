@@ -4,7 +4,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const mineflayer = require('mineflayer');
 
-const serverHost = process.env.SERVER_HOST || 'diasmp0.msch.io';
+const serverHost = process.env.SERVER_HOST || 'diasmp0.mcsh.io';
 const serverPort = parseInt(process.env.SERVER_PORT || '25565', 10);
 const botUsername = process.env.BOT_USERNAME || '24_7_AFK';
 const minecraftVersion = process.env.MC_VERSION || false;
