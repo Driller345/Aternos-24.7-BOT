@@ -4,9 +4,9 @@ const http = require('http');
 const { Server } = require('socket.io');
 const mineflayer = require('mineflayer');
 
-const serverHost = process.env.SERVER_HOST || 'diasmp0.falixsrv.me';
-const serverPort = parseInt(process.env.SERVER_PORT || '24369', 10);
-const botUsername = process.env.BOT_USERNAME || '247_Monitor';
+const serverHost = process.env.SERVER_HOST || 'diasmp0.msch.io';
+const serverPort = parseInt(process.env.SERVER_PORT || '25565', 10);
+const botUsername = process.env.BOT_USERNAME || '24_7_AFK';
 const minecraftVersion = process.env.MC_VERSION || false;
 const reconnectInterval = parseInt(process.env.RECONNECT_INTERVAL_MS || '40000', 10);
 const antiAfkInterval = parseInt(process.env.ANTI_AFK_INTERVAL_MS || '20000', 10);
